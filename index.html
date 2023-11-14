@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reply with Template Add-in</title>
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+  <style>
+    /* Add some basic styling for the button and file input */
+    #replyWithTemplateButton {
+      background-color: #0078d4; /* Outlook blue color */
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #templateFileInput {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Use an image tag for the button with your custom icon -->
+  <button id="replyWithTemplateButton">
+    <img src="icon.png" alt="Reply with Template">
+  </button>
+
+  <!-- Add a file input for selecting the .oft template file -->
+  <input type="file" id="templateFileInput">
+</body>
+</html>

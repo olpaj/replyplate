@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:type="MailApp">
+  <Id>d94e46c5-cf98-4f39-9c12-bcafabd7fb14</Id>
+  <Version>1.0</Version>
+  <ProviderName>mikolaj_olpinski</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Reply with Template"/>
+  <Description DefaultValue="Reply to the sender with a predefined template."/>
+  <IconUrl DefaultValue="https://raw.githubusercontent.com/olpaj/replyplate/main/icon.png"/>
+  <HighResolutionIconUrl DefaultValue="https://raw.githubusercontent.com/olpaj/replyplate/main/icon.png"/>
+  <SupportUrl DefaultValue="https://chat.openai.com/"/>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets DefaultMinVersion="1.4">
+      <Set Name="Mailbox" MinVersion="1.4"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="file:///C:/Users/503369085/OneDrive - General Electric International, Inc/My software/replyplate/index.html"/>
+        <RequestedHeight>50</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteMailbox</Permissions>
+  <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+</OfficeApp>
