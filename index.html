@@ -22,10 +22,12 @@
 </head>
 <body>
   <!-- Use an image tag for the button with your custom icon -->
-  <button id="replyWithTemplateButton">
-    <img src="icon.png" alt="Reply with Template">
-  </button>
-
+  <button id="replyWithTemplateButton" class="ms-Button">
+    <span class="ms-Button-icon">
+        <img src="https://raw.githubusercontent.com/olpaj/replyplate/main/icon.png" alt="Reply with Template" width="74" height="74">
+    </span>
+    <span class="ms-Button-label">Reply with Template</span>
+</button>
   <!-- Add a file input for selecting the .oft template file -->
   <input type="file" id="templateFileInput">
 </body>
