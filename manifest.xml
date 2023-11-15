@@ -5,6 +5,8 @@
   <Id>d94e46c5-cf98-4f39-9c12-bcafabd7fb14</Id>
   <Version>1.0</Version>
   <ProviderName>mikolaj_olpinski</ProviderName>
+  <Permissions>ReadWriteMailbox</Permissions>
+  <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Reply with Template"/>
   <Description DefaultValue="Reply to the sender with a predefined template."/>
@@ -22,11 +24,23 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="file:///C:/Users/503369085/OneDrive - General Electric International, Inc/My software/replyplate/index.html"/>
+        <SourceLocation DefaultValue="https://raw.githubusercontent.com/olpaj/replyplate/main/index.html"/>
         <RequestedHeight>50</RequestedHeight>
       </DesktopSettings>
     </Form>
   </FormSettings>
-  <Permissions>ReadWriteMailbox</Permissions>
-  <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+  <ExtensionPoints>
+    <ExtensionPoint xsi:type="MessageReadCommandSurface">
+      <CommandSurface>
+        <CommandGroup>
+          <Icon>
+            <bt:Image id="icon-16" DefaultValue="https://raw.githubusercontent.com/olpaj/replyplate/main/icon-16.png"/>
+            <bt:Image id="icon-32" DefaultValue="https://raw.githubusercontent.com/olpaj/replyplate/main/icon-32.png"/>
+            <bt:Image id="icon-80" DefaultValue="https://raw.githubusercontent.com/olpaj/replyplate/main/icon-80.png"/>
+          </Icon>
+          <!-- ... other elements ... -->
+        </CommandGroup>
+      </CommandSurface>
+    </ExtensionPoint>
+  </ExtensionPoints>
 </OfficeApp>
